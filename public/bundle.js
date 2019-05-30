@@ -104,7 +104,7 @@ eval("/* Mapbox GL JS is licensed under the 3-Clause BSD License. Full text of l
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const mapboxgl = __webpack_require__(/*! mapbox-gl/dist/mapbox-gl.js */ \"./node_modules/mapbox-gl/dist/mapbox-gl.js\")\n\nmapboxgl.accessToken = 'pk.eyJ1IjoiYmVubzdzdXJpYW5vIiwiYSI6ImNqZXEyZGNsejU0amMycm83dDN5NDd0dGkifQ.As2dldVU8t2LPQJqh6NxtQ'\n\nconst map = new mapboxgl.Map({\n  container: 'map',\n  center: [-74.009, 40.705],\n  zoom: 12,\n  style: 'mapbox://styles/mapbox/streets-v10'\n})\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const mapboxgl = __webpack_require__(/*! mapbox-gl/dist/mapbox-gl.js */ \"./node_modules/mapbox-gl/dist/mapbox-gl.js\")\n\nmapboxgl.accessToken = 'pk.eyJ1IjoiYmVubzdzdXJpYW5vIiwiYSI6ImNqZXEyZGNsejU0amMycm83dDN5NDd0dGkifQ.As2dldVU8t2LPQJqh6NxtQ'\n\nconst map = new mapboxgl.Map({\n  container: 'map',\n  center: [-74.009, 40.705],\n  zoom: 12,\n  style: 'mapbox://styles/mapbox/streets-v10'\n})\n\nlet el = document.createElement('div')\nel.className = 'marker'\n\nnew mapboxgl.Marker().setLngLat([-74.009151, 40.705086]).addTo(map)\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

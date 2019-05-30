@@ -9,4 +9,7 @@ const map = new mapboxgl.Map({
   style: 'mapbox://styles/mapbox/streets-v10'
 })
 
+let el = document.createElement('div')
+el.className = 'marker'
 
+new mapboxgl.Marker().setLngLat([-74.009151, 40.705086]).addTo(map)
