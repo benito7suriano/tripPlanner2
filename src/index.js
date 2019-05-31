@@ -1,4 +1,5 @@
 const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js')
+const marker = require('./marker')
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYmVubzdzdXJpYW5vIiwiYSI6ImNqZXEyZGNsejU0amMycm83dDN5NDd0dGkifQ.As2dldVU8t2LPQJqh6NxtQ'
 
@@ -9,7 +10,4 @@ const map = new mapboxgl.Map({
   style: 'mapbox://styles/mapbox/streets-v10'
 })
 
-let el = document.createElement('div')
-el.className = 'marker'
-
-new mapboxgl.Marker().setLngLat([-74.009151, 40.705086]).addTo(map)
+marker(-74.009151, 40.705086, 'activity').addTo(map)
